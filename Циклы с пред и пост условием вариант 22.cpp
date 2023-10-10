@@ -1,28 +1,34 @@
-/**********************************************
-* Терешкин Артемий, ПИ-231                    * 
-* Циклы с пред/пост условием, вариант 22      * 
-* https://onlinegdb.com/vreMV7G8AC            * 
-**********************************************/
+/******************************************
+*  Терешкин Артемий ПИ-231                *
+*  Циклы с пост и пред условием, 22       *
+*  https://onlinegdb.com/4FYN6BaoM        *
+******************************************/
 #include <iostream>
-#include <cmath>
 #include <iomanip>
-  
+#include <cmath>
+
 using namespace std;
 
-int main () {
-  double chnastr[9] = {10 , 12.5 , 15 , 17.5 , 20 , 21 , 22 , 23 , 24}; 
-  double selfch; 
-      
-  cout << "Введите собственную частоту:"; 
-  cin >> selfch;
-      
-  cout << fixed << setprecision(2); 
-      
-  for (int i = 0; i < 9; i++) {
-    cout << "w = " << chnastr[i]   
-         << "T = " << 2000 / (selfch * sqrt (1 -  (pow(chnastr[i] / selfch , 2)))) << '\n';
+int main() {
+  double w0;
+  double w = 10;
+
+  cout << "Введите w0:";
+  cin >> w0;
+ 
+  cout << fixed << setprecision(2);
+
+  while (w < 20) {
+    cout << " W = " << w
+         << " T = " << 2000 / (w0 * (sqrt(1 - pow((w / w0) , 2)))) << '\n';
+    w += 2.5;
   }
-      
-  return 0 ;
-               
+
+  do {
+    cout << " W = " << w
+         << " T = " << 2000 / (w0 * (sqrt(1 - pow((w / w0) , 2)))) << '\n';
+    w += 1;
+  } while (w <= 24 );
+
+  return 0;
 }
