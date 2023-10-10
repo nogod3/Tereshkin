@@ -1,7 +1,7 @@
 /******************************************
 * Терешкин Артемий ПИ-231                 *
 * Циклы с ветвлениями, 22                 *    
-* https://onlinegdb.com/LKh-VaR17         *
+* https://onlinegdb.com/HBkljM4Ern        *
 ******************************************/
 #include <iomanip>
 #include <cmath>
