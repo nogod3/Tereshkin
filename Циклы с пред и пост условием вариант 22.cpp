@@ -1,7 +1,7 @@
 /******************************************
 *  Терешкин Артемий ПИ-231                *
 *  Циклы с пост и пред условием, 22       *
-*  https://onlinegdb.com/4FYN6BaoM        *
+*  https://onlinegdb.com/NKOWQNRg0v       *
 ******************************************/
 #include <iostream>
 #include <iomanip>
