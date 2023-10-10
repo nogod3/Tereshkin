@@ -1,2 +1,2 @@
-# onepieceisreal
+# Lab-1-Tereshkin
 лабораторная номер 1( Вариант 22)
